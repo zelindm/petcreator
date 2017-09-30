@@ -1,0 +1,20 @@
+{
+  "name": "zelindm/petcreator",
+  "description": "otto test",
+  "type": "laravel",
+  "license": "MIT",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Dmitry Zelinsky",
+      "email": "dmitry.zelinsky@icandeliver.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+    "Zelindm\\PetCreator\\": "src/"
+    }
+  }
+}
