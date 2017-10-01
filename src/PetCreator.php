@@ -2,7 +2,6 @@
 
 namespace Zelindm\PetCreator;
 
-use Examples\ObjectsMakeException;
 use Illuminate\Support\Facades\Config;
 
 
