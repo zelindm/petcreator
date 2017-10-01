@@ -1,6 +1,6 @@
 <?php
 
-namespace Zelindm\Test;
+namespace Examples;
 
 abstract class ObjectClass {
     protected $age;
