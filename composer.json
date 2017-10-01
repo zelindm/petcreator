@@ -15,7 +15,7 @@
   "autoload": {
     "psr-4": {
     "Zelindm\\PetCreator\\": "src/",
-    "Examples\\": "src/config/Examples"
+    "Examples\\": "src/Examples"
     }
   }
 }

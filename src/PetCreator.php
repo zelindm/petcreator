@@ -2,19 +2,26 @@
 
 namespace Zelindm\PetCreator;
 
-use Examples\Dogs;
+use Examples\ObjectsMakeException;
 use Illuminate\Support\Facades\Config;
+
 
 class PetCreator
 {
     public function make($name)
     {
         $conf = Config::get('objects.'.$name);
+        $age = array_get($conf, 'age');
+        $className = array_get($conf, 'class');
 
-        if ($conf) {
-            return new Dogs(7);
+        if ($conf && $age && $className) {
+            $obj = new $className($age);
+
+            if(is_subclass_of($obj, 'Examples\ObjectClass')){
+                return $obj;
+            }
         }
 
-        return 1;
+        throw new ObjectsMakeException();
     }
 }

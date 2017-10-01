@@ -14,4 +14,9 @@ abstract class ObjectClass {
     {
         return $this->age;
     }
+
+    public function class() : string
+    {
+        return self::class;
+    }
 }

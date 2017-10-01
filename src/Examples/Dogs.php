@@ -10,9 +10,4 @@ namespace Examples;
 
 class Dogs extends ObjectClass
 {
-    public function __construct()
-    {
-        return 2332;
-    }
-
 }
